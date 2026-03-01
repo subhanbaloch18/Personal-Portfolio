@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "skills": {
+    "font-pairing-suggester": {
+      "source": "onewave-ai/claude-skills",
+      "sourceType": "github",
+      "computedHash": "018187bb7da8f970ee06474e1f32d3fa232c7d0bf25ebf0b4912d41f25e503ab"
+    },
+    "interactive-portfolio": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "983e2d3e464dcf4a113500c3de9efd47e6ed985b81ccbb8b44f30851b003cf75"
+    },
+    "landing-page-design": {
+      "source": "inference-sh-9/skills",
+      "sourceType": "github",
+      "computedHash": "a255b8c946319b643fa96c30d216d8f6b135a4c22b6b8ea666389d706ff93535"
+    },
+    "linkedin-personal-branding": {
+      "source": "schwepps/skills",
+      "sourceType": "github",
+      "computedHash": "69a9f155a605329d3810ae940eb7a510c40a1cfb1c64fda4119d45a10d9850b5"
+    },
+    "og-image-design": {
+      "source": "inference-sh-9/skills",
+      "sourceType": "github",
+      "computedHash": "f4135874bdd897a5bef6786859a0d241cb33a114ce9da1aa4be46d070e84b54e"
+    },
+    "pwa-development": {
+      "source": "alinaqi/claude-bootstrap",
+      "sourceType": "github",
+      "computedHash": "45a3bae4955e3399fd4680c44d2bf1adb8e88a4c595c0d2284de5785497a621f"
+    },
+    "resume-design-generation": {
+      "source": "eachlabs/skills",
+      "sourceType": "github",
+      "computedHash": "d963b93a2c5bfc5b75c67ec39aa0eae2375504be1c59c2195d7a7f258e54a38d"
+    },
+    "scroll-animations": {
+      "source": "dylantarre/animation-principles",
+      "sourceType": "github",
+      "computedHash": "16e1d229291ca23991f26215efd830f1ce942fdca60deb43f9fbe04a1fee43c2"
+    },
+    "scroll-experience": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "ebbffa1536b34bc79ad614d990db93c5f3a8aa43537ce051e527f2a96fc6aee2"
+    },
+    "threejs-animation": {
+      "source": "cloudai-x/threejs-skills",
+      "sourceType": "github",
+      "computedHash": "457900cae6babbe092e3226a2ac9ae5d09a84199c1b3d5050ed400d4f56a9d82"
+    },
+    "ui-ux-designer": {
+      "source": "lotosbin/claude-skills",
+      "sourceType": "github",
+      "computedHash": "dd0a1b69d9e3abbdc4ccc8ebdde663ab7e01df70f433b8695c06b9cd7d089df6"
+    }
+  }
+}
