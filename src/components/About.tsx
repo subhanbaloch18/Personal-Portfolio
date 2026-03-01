@@ -28,10 +28,7 @@ export default function About() {
         <h2 className="section-heading" data-number="01.">About Me</h2>
       </motion.div>
 
-      <div
-        style={{ display: "grid", gridTemplateColumns: "3fr 2fr", gap: "4rem", alignItems: "start" }}
-        className="grid-cols-1 md:grid-cols-2"
-      >
+      <div className="about-grid">
         {/* Bio text */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -101,7 +98,8 @@ export default function About() {
           {/* Avatar */}
           <motion.div
             whileHover={{ scale: 1.03 }}
-            style={{ position: "relative", width: "260px", height: "260px", margin: "0 auto" }}
+            className="about-avatar"
+          style={{ position: "relative", width: "260px", height: "260px", margin: "0 auto" }}
           >
             {/* Offset border accent */}
             <div style={{

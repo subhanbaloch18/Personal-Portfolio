@@ -58,16 +58,16 @@ export default function Hero() {
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
-        padding: "5rem 6vw 0",
+        padding: "clamp(4rem, 8vw, 5rem) 6vw 0",
         overflow: "hidden",
       }}
     >
       <StarsCanvas />
 
       {/* SVG blob backgrounds */}
-      <div className="blob" style={{ width: "500px", height: "500px", background: "#64ffda", top: "-100px", right: "10%" }} />
-      <div className="blob" style={{ width: "400px", height: "400px", background: "#0070f3", bottom: "0px", left: "5%", animationDelay: "4s" }} />
-      <div className="blob" style={{ width: "300px", height: "300px", background: "#a855f7", top: "30%", right: "25%", animationDelay: "8s" }} />
+      <div className="blob" style={{ width: "clamp(200px,40vw,500px)", height: "clamp(200px,40vw,500px)", background: "#64ffda", top: "-100px", right: "10%" }} />
+      <div className="blob" style={{ width: "clamp(160px,32vw,400px)", height: "clamp(160px,32vw,400px)", background: "#0070f3", bottom: "0px", left: "5%", animationDelay: "4s" }} />
+      <div className="blob" style={{ width: "clamp(120px,24vw,300px)", height: "clamp(120px,24vw,300px)", background: "#a855f7", top: "30%", right: "25%", animationDelay: "8s" }} />
 
       {/* Left social sidebar */}
       <motion.div

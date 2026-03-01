@@ -52,7 +52,7 @@ export default function Navbar() {
           position: "fixed",
           top: 0, left: 0, right: 0,
           zIndex: 100,
-          padding: "0 2.5rem",
+          padding: "0 clamp(1rem, 4vw, 2.5rem)",
           height: "70px",
           display: "flex",
           alignItems: "center",
@@ -256,6 +256,31 @@ export default function Navbar() {
                 {link.name}
               </motion.button>
             ))}
+
+            {/* Resume + theme in drawer */}
+            <motion.a
+              href="/resume"
+              initial={{ opacity: 0, x: 24 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: navLinks.length * 0.07 }}
+              onClick={() => setMenuOpen(false)}
+              style={{
+                fontFamily: "var(--font-mono, 'JetBrains Mono', monospace)",
+                fontSize: "0.9rem", color: "#64ffda",
+                textDecoration: "none",
+                border: "1px solid #64ffda",
+                borderRadius: "6px", padding: "8px 24px",
+              }}
+            >
+              Resume
+            </motion.a>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: navLinks.length * 0.07 + 0.07 }}
+            >
+              <ThemeToggle />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
