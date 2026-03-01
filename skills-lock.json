@@ -31,6 +31,11 @@
       "sourceType": "github",
       "computedHash": "45a3bae4955e3399fd4680c44d2bf1adb8e88a4c595c0d2284de5785497a621f"
     },
+    "responsive-design": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "07fa30d210a3ce6f752599f29bf19f319a6180b3fb96d318bd9092fdeae9793f"
+    },
     "resume-design-generation": {
       "source": "eachlabs/skills",
       "sourceType": "github",
