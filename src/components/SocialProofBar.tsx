@@ -20,26 +20,22 @@ const techLogos = [
 export default function SocialProofBar() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1.6, duration: 0.6 }}
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.5 }}
       style={{
-        position: "absolute",
-        bottom: "3rem",
-        left: "6vw",
-        right: "6vw",
-        zIndex: 5,
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
         flexWrap: "wrap",
         gap: "1rem",
-        background: "rgba(10,25,47,0.75)",
+        background: "rgba(10,25,47,0.85)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
-        borderRadius: "14px",
-        border: "1px solid rgba(100,255,218,0.1)",
-        padding: "0.85rem 1.5rem",
+        borderTop: "1px solid rgba(100,255,218,0.1)",
+        borderBottom: "1px solid rgba(100,255,218,0.06)",
+        padding: "0.9rem 6vw",
       }}
     >
       {/* Proof numbers */}
@@ -48,8 +44,9 @@ export default function SocialProofBar() {
           <motion.div
             key={item.label}
             initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.7 + i * 0.1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.1, duration: 0.4 }}
             style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
           >
             <item.icon style={{ color: "#64ffda", fontSize: "0.9rem" }} />
@@ -75,8 +72,9 @@ export default function SocialProofBar() {
       {/* Tech stack pills */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 0.4 }}
         style={{ display: "flex", gap: "0.5rem", alignItems: "center", flexWrap: "wrap" }}
       >
         <span style={{

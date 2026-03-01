@@ -6,7 +6,7 @@ import { FiGithub, FiLinkedin, FiMail, FiArrowDown, FiCode } from "react-icons/f
 import StarsCanvas from "./StarsCanvas";
 import SphereCanvas from "./SphereCanvas";
 import MagneticButton from "./MagneticButton";
-import SocialProofBar from "./SocialProofBar";
+
 
 const titles = [
   "Full Stack Developer",
@@ -387,9 +387,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Social proof bar (landing-page-design skill: social proof below hero) */}
-      <SocialProofBar />
-
       {/* Scroll indicator */}
       <motion.button
         onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
@@ -397,7 +394,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8 }}
         style={{
-          position: "absolute", bottom: "0.5rem", left: "50%",
+          position: "absolute", bottom: "2rem", left: "50%",
           transform: "translateX(-50%)",
           background: "none", border: "none", cursor: "pointer",
           color: "#64ffda", zIndex: 5,
