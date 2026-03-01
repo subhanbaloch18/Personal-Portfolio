@@ -131,18 +131,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Main layout grid */}
-      <div
-        style={{
-          position: "relative", zIndex: 5,
-          display: "grid",
-          gridTemplateColumns: "1fr auto",
-          gap: "2rem",
-          alignItems: "center",
-          width: "100%",
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
+      <div className="hero-grid">
         {/* ── Text column (scroll parallax) ── */}
         <motion.div style={{ y: textY, opacity }}>
           {/* Greeting line */}

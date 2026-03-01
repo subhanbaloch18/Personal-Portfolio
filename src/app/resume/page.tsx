@@ -118,7 +118,7 @@ export default function ResumePage() {
           background: "rgba(10,25,47,0.92)",
           backdropFilter: "blur(20px)",
           borderBottom: "1px solid rgba(100,255,218,0.08)",
-          padding: "0.75rem 2rem",
+          padding: "0.75rem clamp(1rem, 4vw, 2rem)",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -181,7 +181,7 @@ export default function ResumePage() {
         style={{
           maxWidth: "860px",
           margin: "0 auto",
-          padding: "3rem 2rem 6rem",
+          padding: "2rem clamp(1rem, 4vw, 2rem) 5rem",
         }}
         id="resume-content"
       >
@@ -347,7 +347,7 @@ export default function ResumePage() {
 
         {/* ─── Skills ─── */}
         <Section title="Technical Skills">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "1rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 180px), 1fr))", gap: "1rem" }}>
             {Object.entries(skills).map(([category, items], i) => (
               <motion.div
                 key={category}
@@ -395,7 +395,7 @@ export default function ResumePage() {
 
         {/* ─── Projects ─── */}
         <Section title="Projects">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: "1rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 320px), 1fr))", gap: "1rem" }}>
             {projects.map((proj, i) => (
               <motion.a
                 key={proj.name}

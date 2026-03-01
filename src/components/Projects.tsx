@@ -143,7 +143,7 @@ export default function Projects() {
 
       <motion.div layout style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 300px), 1fr))",
         gap: "1.4rem", marginBottom: "2.5rem",
       }}>
         <AnimatePresence>

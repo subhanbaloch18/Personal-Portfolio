@@ -244,6 +244,22 @@ body::before {
   animation: tagPulse 2.5s ease-in-out infinite;
 }
 
+/* ── Hero main grid ────────────────── */
+.hero-grid {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 0; }
+}
+
 /* ── Responsive grids ──────────────── */
 .about-grid {
   display: grid;
