@@ -359,16 +359,18 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2 }}
             style={{
-              background: "rgba(10,25,47,0.85)",
-              border: "1px solid rgba(100,255,218,0.12)",
+              background: "rgba(8,20,40,0.96)",
+              border: "1px solid rgba(100,255,218,0.25)",
               borderRadius: "10px",
-              padding: "1rem 1.4rem",
+              padding: "1.1rem 1.5rem",
               fontFamily: "var(--font-mono, 'JetBrains Mono', monospace)",
-              fontSize: "0.72rem",
-              color: "#8892b0",
-              backdropFilter: "blur(12px)",
-              maxWidth: "280px",
-              lineHeight: 1.7,
+              fontSize: "0.75rem",
+              color: "#a8b2c8",
+              backdropFilter: "blur(20px)",
+              WebkitBackdropFilter: "blur(20px)",
+              maxWidth: "290px",
+              lineHeight: 1.85,
+              boxShadow: "0 4px 32px rgba(0,0,0,0.5), 0 0 0 1px rgba(100,255,218,0.06)",
             }}
           >
             <div style={{ display: "flex", gap: "5px", marginBottom: "0.6rem" }}>
@@ -395,7 +397,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8 }}
         style={{
-          position: "absolute", bottom: "2rem", left: "50%",
+          position: "absolute", bottom: "0.5rem", left: "50%",
           transform: "translateX(-50%)",
           background: "none", border: "none", cursor: "pointer",
           color: "#64ffda", zIndex: 5,
